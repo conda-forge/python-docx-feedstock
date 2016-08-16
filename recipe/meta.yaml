@@ -13,7 +13,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -42,6 +42,7 @@ test:
 about:
   home: https://github.com/python-openxml/python-docx
   license: MIT
+  license_file: LICENSE
   summary: 'Create and update Microsoft Word .docx files.'
 
 extra:
