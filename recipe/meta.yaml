@@ -1,7 +1,7 @@
 {% set name = "python-docx" %}
-{% set version = "0.8.6" %}
+{% set version = "0.8.7" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "55ece6fd4a4fa3389909fa0e51400fce428e1fb6f6ef3599cbba31673441f184" %}
+{% set hash_val = "ba9f2a7ca391b78ab385d796b38af3f21bab23c727fc8e0c5e630448d1a11fe3" %}
 
 package:
   name: {{ name }}
@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
