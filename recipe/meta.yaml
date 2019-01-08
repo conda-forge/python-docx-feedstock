@@ -1,7 +1,7 @@
 {% set name = "python-docx" %}
-{% set version = "0.8.7" %}
+{% set version = "0.8.8" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "ba9f2a7ca391b78ab385d796b38af3f21bab23c727fc8e0c5e630448d1a11fe3" %}
+{% set hash_val = "10d9f50b6e32f21006a496f1af0718972673e7e8bb0754c9b08eab58de42e246" %}
 
 package:
   name: {{ name }}
