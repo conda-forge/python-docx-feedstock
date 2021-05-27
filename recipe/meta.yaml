@@ -1,7 +1,6 @@
 {% set name = "python-docx" %}
-{% set version = "0.8.10" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "bc76ecac6b2d00ce6442a69d03a6f35c71cd72293cd8405a7472dfe317920024" %}
+{% set version = "0.8.11" %}
+{% set hash_val = "1105d233a0956dd8dd1e710d20b159e2d72ac3c301041b95f4d4ceb3e0ebebc4" %}
 
 package:
   name: {{ name }}
@@ -10,20 +9,20 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash_val }}
+  sha256: {{ hash_val }}
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python =2.7|>=3.4
 
   run:
-    - python
+    - python =2.7|>=3.4
     - lxml >=2.3.2
 
 test:
@@ -44,7 +43,7 @@ about:
   home: https://github.com/python-openxml/python-docx
   license: MIT
   license_file: LICENSE
-  summary: 'Create and update Microsoft Word .docx files.'
+  summary: Create and update Microsoft Word .docx files.
 
 extra:
   recipe-maintainers:
