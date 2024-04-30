@@ -1,6 +1,6 @@
 {% set name = "python-docx" %}
-{% set version = "1.1.0" %}
-{% set hash_val = "5829b722141cf1ab79aedf0c34d9fe9924b29764584c0f2164eb2b02dcdf17c9" %}
+{% set version = "1.1.1" %}
+{% set hash_val = "15473bd40a7c16d9367b0a4b2cbbab0a787904fa2f7cadae1ed6f96201dcbb66" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ hash_val }}
 
 build:
