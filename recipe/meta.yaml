@@ -1,6 +1,6 @@
 {% set name = "python-docx" %}
-{% set version = "1.1.1" %}
-{% set hash_val = "15473bd40a7c16d9367b0a4b2cbbab0a787904fa2f7cadae1ed6f96201dcbb66" %}
+{% set version = "1.1.2" %}
+{% set hash_val = "0cf1f22e95b9002addca7948e16f2cd7acdfd498047f1941ca5d293db7762efd" %}
 
 package:
   name: {{ name }}
