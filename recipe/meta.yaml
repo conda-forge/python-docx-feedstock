@@ -1,6 +1,6 @@
 {% set name = "python-docx" %}
-{% set version = "1.1.2" %}
-{% set hash_val = "0cf1f22e95b9002addca7948e16f2cd7acdfd498047f1941ca5d293db7762efd" %}
+{% set version = "1.2.0" %}
+{% set hash_val = "7bc9d7b7d8a69c9c02ca09216118c86552704edc23bac179283f2e38f86220ce" %}
 
 package:
   name: {{ name }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
